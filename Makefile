@@ -33,3 +33,4 @@ $(HEAP): $(OBJHEAP)
 clean:
 	rm $(OBJSTACK) $(OBJLINKEDLIST) $(OBJBST) $(OBJHEAP)
 	rm $(STACK) $(LINKEDLIST) $(BST) $(HEAP)
+	
