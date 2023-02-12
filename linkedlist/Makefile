@@ -10,5 +10,4 @@ $(TARGET): $(OBJFILES)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES)
 
 clean:
-	rm $(OBJFILES) $(TARGET)
-	
+	rm -f $(OBJFILES) $(TARGET)
