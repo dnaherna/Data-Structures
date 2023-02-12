@@ -14,8 +14,8 @@ HEAP = testheap
 all: $(STACK) $(LINKEDLIST) $(BST) $(HEAP)
 
 stack: $(STACK)
-linkedlist: $(linkedlist)
-bst: $(bst)
+linkedlist: $(LINKEDLIST)
+bst: $(BST)
 heap: $(HEAP)
 
 $(STACK): $(OBJSTACK)
@@ -31,6 +31,6 @@ $(HEAP): $(OBJHEAP)
 	$(CC) $(CFLAGS) -o $(HEAP) $(OBJHEAP)
 
 clean:
-	rm $(OBJSTACK) $(OBJLINKEDLIST) $(OBJBST) $(OBJHEAP)
-	rm $(STACK) $(LINKEDLIST) $(BST) $(HEAP)
+	rm -f $(OBJSTACK) $(OBJLINKEDLIST) $(OBJBST) $(OBJHEAP)
+	rm -f $(STACK) $(LINKEDLIST) $(BST) $(HEAP)
 	
